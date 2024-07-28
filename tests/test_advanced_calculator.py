@@ -3,6 +3,7 @@
 import unittest
 from calculator import add, subtract, multiply, divide
 
+
 class TestAdvancedCalculator(unittest.TestCase):
     def test_add_floats(self):
         self.assertAlmostEqual(add(1.1, 2.2), 3.3)
@@ -26,5 +27,7 @@ class TestAdvancedCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             divide(1.0, 0.0)
 
+
 if __name__ == '__main__':
     unittest.main()
+
